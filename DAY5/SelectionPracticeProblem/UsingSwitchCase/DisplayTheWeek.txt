@@ -1,0 +1,18 @@
+#! /bin/bash -x
+
+#variable
+
+number=$(( RANDOM%7 + 1))
+
+
+#selection
+
+case $number in
+        1) echo $number= 1 "sunday" ;;
+        2) echo $number= 2 "monday" ;;
+        3) echo $number= 3  "tuesday" ;;
+        4) echo $number= 4 "wednesday" ;;
+        5) echo $number= 5 "tuesday" ;;
+        6) echo $number= 6 "friday" ;;
+        7) echo $number= 7 "saturday" ;;
+esac

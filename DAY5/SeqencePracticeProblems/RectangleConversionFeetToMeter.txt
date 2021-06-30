@@ -1,0 +1,8 @@
+﻿#! /bin/bash -x
+l=60
+b=40
+area=$(($l*$b))
+
+inmeter=$( awk "BEGIN { print  $area/3.281;}")
+
+echo The Area is $inmeter metres.

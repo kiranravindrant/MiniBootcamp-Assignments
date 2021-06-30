@@ -1,0 +1,15 @@
+#! /bin/bash -x
+
+
+read  -p "1)FT TO INCH 2)INCH TO FT 3)FT TO METRE 4)METRE TO FT " n
+
+read -p "Enter Length" l
+
+case $n in
+    1)convert=$( awk "BEGIN { print  $l*12;}");;
+    2)convert=$( awk "BEGIN { print  $l/12;}");;
+    3)convert=$( awk "BEGIN { print  $l/3.281;}");;
+    4)convert=$( awk "BEGIN { print  $l*3.281;}");;
+    *)Wrong choice ;;
+esac
+echo $convert

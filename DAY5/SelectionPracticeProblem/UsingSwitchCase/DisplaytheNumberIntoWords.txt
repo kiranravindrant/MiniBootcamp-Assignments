@@ -1,0 +1,20 @@
+#! /bin/bash -x
+
+#variable
+
+output=$(( RANDOM%9 + 1 ))
+
+
+#selection
+
+case $output in
+     1) echo $output = 1 ":- one" ;;
+     2) echo $output = 2  "two" ;;
+     3) echo $output = 3  "three" ;;
+     4) echo $output = 4 "four" ;;
+     5) echo $output = 5 "five" ;;
+     6) echo $output = 6 "six" ;;
+     7) echo $output = 7 "seven" ;;
+     8) echo $output = 8 "eight" ;;
+     9) echo $output = 9 "nine" ;;
+ esac

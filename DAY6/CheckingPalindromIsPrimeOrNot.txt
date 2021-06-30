@@ -1,0 +1,51 @@
+#! /bin/bash -x
+
+read -p "enter the number:-" num
+
+reverse=0
+num1=num
+i=2
+function PrimeCheck(){
+
+           for((i=2;i<=$num/2;i++))
+           do
+                output=$(($num%$i))
+           if [ $output -eq 0 ]
+            then
+                echo "not a prime number"
+            else
+                  echo "prime number"
+            fi
+           done
+
+}
+            echo $output
+call="$( PrimeCheck )"
+
+
+
+
+function PalindromCheck(){
+     local  check=$(($num%10))
+     local reverse=$(((reverse*10)+$check))
+     local num1=$(($num%10))
+     local prime=$(($num1%$i))
+
+      if [ $num1 -eq $reverse ]
+then
+      echo "palindrom number"
+else
+     echo "not a palindrom number"
+fi
+           echo  $prime
+if ((  ( $prime != 0 ) && ( $num1 == $reverse ) ))
+then
+      echo "palindrom number is a prime number"
+else
+       echo "palindrom number is not a prime number"
+fi
+}
+call="$( PalindromCheck )"
+
+
+

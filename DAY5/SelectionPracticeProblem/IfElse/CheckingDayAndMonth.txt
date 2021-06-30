@@ -1,0 +1,9 @@
+#cheching day and month
+read -p “ENTER DATE:-“ date
+read -p “ENTER DATE:-“ month
+if (( ( $month -ge 3 && $date -le 20 )  && ( $month -le 6  $date -le 20 )  && ( $date -lt 31 ) ))
+then
+        echo  $date $month “true”
+else 
+        echo  “false”
+fi 

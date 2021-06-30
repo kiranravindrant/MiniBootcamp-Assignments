@@ -1,0 +1,1 @@
+$ awk 'BEGIN {print 42/12; exit}'

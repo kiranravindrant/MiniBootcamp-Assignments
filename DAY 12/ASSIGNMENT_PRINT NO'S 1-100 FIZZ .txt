@@ -1,0 +1,20 @@
+PROGRAM TO PRINT NUMBERS FROM 1-100 
+print fizz for multiples of 3
+buzz for multiples of 5
+fizzbuzz for multiples of 3&5
+
+#! bin/bash -x
+for((i=1; i<=100; i++))
+do
+if [ $(($i%3)) -eq '0' ] && [ $(($i%5)) -eq '0' ]
+then
+echo "FIZZBUZZ"
+elif [ $(($i%5)) -eq '0' ]
+then
+echo "BUZZ"
+elif [ $(($i%3)) -eq '0' ]
+then
+echo "FIZZ"
+else echo -e "\n $i "
+fi
+done

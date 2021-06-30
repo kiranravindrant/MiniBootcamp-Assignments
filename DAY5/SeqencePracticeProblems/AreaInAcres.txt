@@ -1,0 +1,8 @@
+#! /bin/bash -x
+l=60
+b=40
+area=$(($l*$b))
+
+inacres=$( awk "BEGIN { print  $area*25/43560;}")
+
+echo The Area is $inacres Acres.

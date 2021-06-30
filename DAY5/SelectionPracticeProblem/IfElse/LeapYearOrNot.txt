@@ -1,0 +1,8 @@
+ #! /bin/bash -x
+Read -p “ENETR YEAR:-“ ENTERYEAR
+if (( ( $$ENTERYEAR%4==0 ) || ( $ENETRYEAR%400==0 )  || ( $ENETRYEAR%100==0 ) )
+then 
+         echo “is a leap year”
+else   
+         echo “not a leap year”
+fi

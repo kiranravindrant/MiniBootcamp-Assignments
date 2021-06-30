@@ -1,0 +1,12 @@
+﻿#! /bin/bash -x
+#check flip of the coin
+
+#variable
+flip=$((RANDOM%2))
+#selection
+if [ $flip -eq 1 ]
+then 
+        echo “head”
+else 
+       echo “tail”
+fi 

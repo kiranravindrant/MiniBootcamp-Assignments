@@ -1,0 +1,12 @@
+#! /bin/bash -x
+
+n=5  #no of times to throw dice
+
+for (( roll =1; roll<=n; roll++))
+do
+output=$((10+RANDOM%90))    #To get random two digits no's
+
+sum=$(($sum + $output))
+
+echo $output
+done
